@@ -1,7 +1,7 @@
 import knex from "knex";
 import { CreateRefrigerante } from "../Types/refrigerante.types";
 
-class ProvaRepository{
+class RefrigeranteRepository{
   async create(dados: CreateRefrigerante) {
         const [refrigerantes] = await knex('Refrigerantes').insert(dados).returning("*")
         return refrigerantes
@@ -30,4 +30,4 @@ class ProvaRepository{
     }
 }
 
-export const provaRepository = new ProvaRepository
+export const refrigeranteRepository = new RefrigeranteRepository

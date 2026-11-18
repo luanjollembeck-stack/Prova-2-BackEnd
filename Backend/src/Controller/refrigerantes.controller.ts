@@ -1,5 +1,6 @@
 import { type Request, type Response } from "express";
 import { CreateRefrigerante } from "../Types/refrigerante.types";
+import { refrigeranteService } from "../Services/refrigerante.service";
 
 class RefrigeranteController {
     async create(req: Request<CreateRefrigerante>, res: Response) {
