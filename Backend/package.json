@@ -6,6 +6,9 @@
     "knex": "^3.3.0",
     "pg": "^8.23.1"
   },
+  "scripts": {
+    "dev": "tsx watch src/server.ts"
+  },
   "devDependencies": {
     "@types/express": "^5.0.6"
   }
