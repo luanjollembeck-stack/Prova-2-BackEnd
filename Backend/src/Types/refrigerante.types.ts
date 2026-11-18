@@ -3,7 +3,7 @@ export interface Refrigerante{
     nome: string
     marca: string
     sabor: string
-    volume: string
+    volume_ml: string
     preco: string
     quantidade_estoque: string
 }
@@ -11,7 +11,7 @@ export interface CreateRefrigerante{
     nome: string
     marca: string
     sabor: string
-    volume: string
+    volume_ml: string
     preco: string
     quantidade_estoque: string
 }
